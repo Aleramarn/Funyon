@@ -1,28 +1,107 @@
-header {
-    color: yellowgreen;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 576px) {
-    
+
+header {
+    background-color: rgb(219, 219, 120);
+    text-align: center;
 }
 
+nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.menu li {
+    text-align: left;
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu-clicked {
+    display: none;
+}
+
+#menu-clicked:checked~nav {
+    display: block;
+}
+
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#fun {
+   width: 60%;
+   height: 60%;
+}
+h2 {
+    text-align: center;
+}
+
+
+}
 @media (min-width: 720px) {
 
+    #menu-clicked,
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        background: #7ec981;
+        text-align: center;
+        padding: 2px 0;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .menu li {
+        display: inline-block;
+        padding: 10px 15px;
+        border-bottom: none;
+    }
 }
 
 @media (min-width: 992px) {
+
+    #menu-clicked,
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        background: #848b41;
+        text-align: center;
+        padding: 2px 0;
+    }
+ #fun {
+    width: 800px;
+    height: 800px;
+ }
+
+    .div1 {
+        float: left;
+    }
+    .div2 {
+        float: right;
+    }
 
 }
